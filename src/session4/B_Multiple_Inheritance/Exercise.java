@@ -13,8 +13,8 @@ public class Exercise {
         /**
          * Porsche911's objects have the speed method because they are Vehicle's objects too.
          */
-        //Porsche911 porsche911 = new Porsche911();
-        //System.out.println(porsche911.speed());
+        Porsche911 porsche911 = new Porsche911();
+        System.out.println(porsche911.speed());
 
 
 
@@ -51,7 +51,7 @@ public class Exercise {
         // System.out.println(electricVehicle.speed()); //Compilation Error
 
 
-        /*
+
         //Did you have time to finish the exercise?
         boolean I_did_finish = true;
 
@@ -62,6 +62,6 @@ public class Exercise {
         String comment = "No comments";
 
         feedback.Feedback.submit("session4_B", I_did_finish, I_did_understand, comment);
-    */
+
     }
 }
