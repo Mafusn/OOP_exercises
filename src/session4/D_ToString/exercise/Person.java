@@ -27,6 +27,23 @@ public class Person {
         this.age = age;
     }
 
+    @Override
+    public String toString() {
+        if (middleName.isEmpty())
+            return "Person{" +
+                    "firstName='" + firstName + '\'' +
+                    ", lastName='" + lastName + '\'' +
+                    ", age=" + age +
+                    '}';
+
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
     public static void main(String[] args) {
 
         //Create the object
@@ -34,7 +51,7 @@ public class Person {
         System.out.println(person1);
 
         Person person2 = new Person("Anders", "M", "Madsen", 38);
-        System.out.println(person1);
+        System.out.println(person2);
 
         /***** UNCOMMENT BELOW TO PROVIDE FEEDBACK ****/
         /*

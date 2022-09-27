@@ -11,7 +11,15 @@ public class Person {
         this.age = age;
     }
 
-   public static void main(String[] args) {
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+    public static void main(String[] args) {
 
         //Create the object
         Person person1 = new Person("Anders Madsen", 38);
