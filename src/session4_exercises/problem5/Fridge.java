@@ -15,12 +15,11 @@ public class Fridge {
         return temperature;
     }
 
-    public void getItem() {
-        int length = this.items.length;
-        for (int i = 0; i < length && this.items[i] != null; i++) {
-            System.out.println(Arrays.toString(new Item[]{this.items[i]}));
-        }
-        System.out.println(this.items.length);
-        System.out.println(Arrays.toString(new Item[]{this.items[1]}));
+    public void setItems(int index, Item item){
+        this.items[index] = item;
+    }
+
+    public Item getItem(int id) {
+        return items[id];
     }
 }
