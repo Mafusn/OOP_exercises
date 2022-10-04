@@ -29,16 +29,8 @@ public abstract class Item {
         return this.stock;
     }
 
-    public void takeFromFridge(int stock) {
-        if (this.stock - stock >= 0) {
-            this.stock -= stock;
-        } else {
-            System.out.println("Du har ikke så meget på lager desværre.");
-        }
-    }
-
-    public void addToFridge(int stock) {
-        this.stock += stock;
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 
     @Override

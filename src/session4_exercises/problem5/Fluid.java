@@ -2,7 +2,7 @@ package session4_exercises.problem5;
 
 import java.util.Date;
 
-public class Fluid extends Item{
+public class Fluid extends Item implements BestBeforeProduct {
     private int mL;
     private Date bestBefore;
 
@@ -10,6 +10,19 @@ public class Fluid extends Item{
         super(name, stock, id, fridge);
         this.mL = mL;
         this.bestBefore = bestBefore;
+    }
+
+    public int getmL() {
+        return mL;
+    }
+
+    public void setmL(int mL) {
+        this.mL = mL;
+    }
+
+    @Override
+    public Date getBestBeforeDate() {
+        return this.bestBefore;
     }
 
     @Override
@@ -20,4 +33,5 @@ public class Fluid extends Item{
                 ", mL = " + mL +
                 '}';
     }
+
 }
