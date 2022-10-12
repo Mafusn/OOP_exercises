@@ -14,12 +14,8 @@ public class Multimap<K, V> {
     }
 
     public void put(K k, V v) {
-        if (multimap.get(k) == null) {
-            multimap.put(k, new HashSet<V>());
-            multimap.get(k).add(v);
-        } else {
-            multimap.get(k).add(v);
-        }
+        multimap.computeIfAbsent(k, k1 -> new HashSet<V>());
+        multimap.get(k).add(v);
     }
 
     public Collection values() {
@@ -34,7 +30,6 @@ public class Multimap<K, V> {
         multimap1.put(1, 4);
         multimap1.put(1, 5);
         multimap1.put(2, 4);
-
 
         System.out.println(multimap1.values());
         System.out.println(multimap1.get(1) + ", " + multimap1.get(2));
