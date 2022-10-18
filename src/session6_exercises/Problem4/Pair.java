@@ -1,4 +1,4 @@
-package Stationær.Problem4;
+package session6_exercises.Problem4;
 
 public class Pair<K, V> {
     private K key;

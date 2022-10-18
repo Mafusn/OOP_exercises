@@ -1,4 +1,4 @@
-package Stationær.Problem8;
+package session6_exercises.Problem8;
 
 import java.util.ArrayList;
 import java.util.List;
