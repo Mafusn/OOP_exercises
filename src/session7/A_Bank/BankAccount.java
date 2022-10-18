@@ -22,11 +22,13 @@ public class BankAccount {
     }
 
     public void deposit(int amount) {
+        assert amount >= 0;
         this.balance += amount;
     }
 
     public static void main(String[] args) {
-        System.out.println("tester");
+        BankAccount bankAccount = new BankAccount(100);
+        bankAccount.deposit(-100);
+        System.out.println(bankAccount.getBalance());
     }
-
 }

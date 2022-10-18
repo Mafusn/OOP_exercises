@@ -1,5 +1,6 @@
 package session7.B_TDD;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -17,24 +18,33 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
  */
 public class TestPlayer {
 
+    Player player = null;
+
+    @BeforeEach
+    public void beforeEach() {
+        player = new Player("Andres");
+    }
 
     @Test
-    public void testPlayerName(){
-        Player player = new Player("Andres");
+    public void testPlayerName() {
         assertNotNull(player);
         assertEquals(player.getName(), "Andres");
     }
 
     @Test
-    public void testWins(){
-        Player player = new Player("Andres");
-        assertEquals(player.getWins(),0);
+    public void testWins() {
+        assertEquals(0, player.getWins());
     }
 
     @Test
-    public void testLoses(){
-        Player player = new Player("Andres");
-        assertEquals(player.getLoses(),0);
+    public void testLoses() {
+        assertEquals(0, player.getLoses());
+    }
+
+    @Test
+    public void testSetWins() {
+        player.setWins(2);
+        assertEquals(2, player.getWins());
     }
 
 
