@@ -1,7 +1,5 @@
 package session1;
 
-import feedback.Feedback;
-
 /**
  * a) Which is the function being computed by this code? (Hint: Use the debugger)
  * b) Re-write it using two nested for-loops?

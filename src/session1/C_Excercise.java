@@ -1,10 +1,5 @@
 package session1;
 
-import feedback.Feedback;
-
-/**
- * Try to understand the rationale behind the outputs
- */
 class C_Excercise {
     public static void main(String[] args) {
         int int_num = 10; //Dynamic initialization

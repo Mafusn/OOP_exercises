@@ -1,7 +1,5 @@
 package session1;
 
-import feedback.Feedback;
-
 /**
  * What is wrong with line 15? Try to fix it.
  */

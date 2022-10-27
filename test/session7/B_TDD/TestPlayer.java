@@ -46,22 +46,4 @@ public class TestPlayer {
         player.setWins(2);
         assertEquals(2, player.getWins());
     }
-
-
-    /***** UNCOMMENT BELOW TO PROVIDE FEEDBACK ****/
-    /*
-    @Test
-    public void feedback() {
-        //Did you have time to finish the exercise?
-        boolean I_did_finish = true;
-
-        //Did you understand the concepts used in the exercise?
-        boolean I_did_understand = true;
-
-        //Any comments
-        String comment = "No comments";
-
-        feedback.Feedback.submit("session7_B", I_did_finish, I_did_understand, comment);
-        }
-     */
 }
