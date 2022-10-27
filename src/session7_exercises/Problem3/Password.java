@@ -10,4 +10,10 @@ public class Password {
     public String isStrong() {
         return "Sløjt";
     }
+
+    public static void main(String[] args) {
+        Password password = new Password("tester");
+
+        System.out.println(password.isStrong());
+    }
 }
