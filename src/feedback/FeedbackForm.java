@@ -11,6 +11,7 @@ public enum FeedbackForm implements MetaData {
 
     private long id;
 
+
     FeedbackForm(long id) {
         this.id = id;
     }

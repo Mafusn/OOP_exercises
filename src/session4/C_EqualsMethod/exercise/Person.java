@@ -57,20 +57,6 @@ public class Person {
 
         System.out.println("HashCode of Person 1 : " + person1.hashCode());
         System.out.println("HashCode of Person 2 : " + person2.hashCode());
-
-        /***** UNCOMMENT BELOW TO PROVIDE FEEDBACK ****/
-        /*
-        //Did you have time to finish the exercise?
-        boolean I_did_finish = true;
-
-        //Did you understand the concepts used in the exercise?
-        boolean I_did_understand = true;
-
-        //Any comments
-        String comment = "No comments";
-
-        feedback.Feedback.submit("session4_C", I_did_finish, I_did_understand, comment);
-        */
     }
 
 }

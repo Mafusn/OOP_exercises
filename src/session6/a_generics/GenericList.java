@@ -30,19 +30,5 @@ public class GenericList<T> {
         giraffGenericList.add(giraff);
 
         System.out.println(giraffGenericList.get(0));
-
-        /***** UNCOMMENT BELOW TO PROVIDE FEEDBACK ****/
-        /*
-        //Did you have time to finish the exercise?
-        boolean I_did_finish = true;
-
-        //Did you understand the concepts used in the exercise?
-        boolean I_did_understand = true;
-
-        //Any comments
-        String comment = "No comments";
-
-        feedback.Feedback.submit("session6_A", I_did_finish, I_did_understand, comment);
-        */
     }
 }

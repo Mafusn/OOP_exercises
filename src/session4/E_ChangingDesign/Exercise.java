@@ -19,20 +19,5 @@ public class Exercise {
         System.out.println("Successful movement? " + success);
 
         System.out.println("\n\nChess Piece at position (0,1): " + chessBoard.getChessPiece(0,1));
-
-        /***** UNCOMMENT BELOW TO PROVIDE FEEDBACK ****/
-
-        /*
-        //Did you have time to finish the exercise?
-        boolean I_did_finish = true;
-
-        //Did you understand the concepts used in the exercise?
-        boolean I_did_understand = true;
-
-        //Any comments
-        String comment = "No comments";
-
-        feedback.Feedback.submit("session4_E", I_did_finish, I_did_understand, comment);
-    */
     }
 }

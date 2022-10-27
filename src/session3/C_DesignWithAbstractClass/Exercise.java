@@ -15,22 +15,5 @@ public class Exercise {
         chessBoard.moveChessPiece(bishop, 2, 4);
 
         System.out.println(bishop.getX() + ", " + bishop.getY());
-
-
-
-        /***** UNCOMMENT BELOW TO PROVIDE FEEDBACK ****/
-
-        /*
-        //Did you have time to finish the exercise?
-        boolean I_did_finish = true;
-
-        //Did you understand the concepts used in the exercise?
-        boolean I_did_understand = true;
-
-        //Any comments
-        String comment = "No comments";
-
-        feedback.Feedback.submit("session3_C_Bishop", I_did_finish, I_did_understand, comment);
-    */
     }
 }

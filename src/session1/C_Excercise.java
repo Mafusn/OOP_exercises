@@ -27,22 +27,6 @@ class C_Excercise {
 
         double result2 = int_num/4.0;
         System.out.println("Result2: " + result2); // 2.5
-
-
-        /***** UNCOMMENT BELOW TO PROVIDE FEEDBACK ****/
-
-        /*
-        //Did you have time to finish the exercise?
-        boolean I_did_finish = true;
-
-        //Did you understand the concepts used in the exercise?
-        boolean I_did_understand = true;
-
-        //Any comments
-        String comment = "No comments";
-
-        Feedback.submit("session1_C", I_did_finish, I_did_understand, comment);
-        */
     }
 
 }

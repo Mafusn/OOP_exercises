@@ -35,19 +35,5 @@ public class Exercise {
          * Volvo's objects do not have the "goFast" method because they are not SportsCar's objects.
          */
         //System.out.println(volvo.goFast(20)); //Compilation Error
-
-
-        /*
-        //Did you have time to finish the exercise?
-        boolean I_did_finish = true;
-
-        //Did you understand the concepts used in the exercise?
-        boolean I_did_understand = true;
-
-        //Any comments
-        String comment = "No comments";
-
-        feedback.Feedback.submit("session4_A", I_did_finish, I_did_understand, comment);
-        */
     }
 }

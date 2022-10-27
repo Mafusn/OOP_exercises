@@ -12,7 +12,6 @@ import java.util.Calendar;
 
 import static feedback.FeedbackForm.*;
 
-
 public class Feedback {
 
     public static void submit(String excercise_id, boolean finished, boolean understood, String comment) {

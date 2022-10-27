@@ -22,20 +22,5 @@ public class Exercise {
         System.out.println(success);
 
         System.out.println(chessBoard.getChessPiece(new Position(0, 0)));
-
-        /***** UNCOMMENT BELOW TO PROVIDE FEEDBACK ****/
-
-        /*
-        //Did you have time to finish the exercise?
-        boolean I_did_finish = true;
-
-        //Did you understand the concepts used in the exercise?
-        boolean I_did_understand = true;
-
-        //Any comments
-        String comment = "No comments";
-
-        feedback.Feedback.submit("session6_D", I_did_finish, I_did_understand, comment);
-        */
     }
 }
