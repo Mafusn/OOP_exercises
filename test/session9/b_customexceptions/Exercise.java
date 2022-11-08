@@ -2,8 +2,7 @@ package session9.b_customexceptions;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 /**
@@ -22,18 +21,21 @@ class Exercise {
     void testDeposit() {
         BankAccount bankAccount = new BankAccount(100);
         bankAccount.deposit(10);
-        assertEquals(0,0);
+        assertEquals(110,bankAccount.getBalance());
     }
 
     @Test
     void negativeAmountException() {
         BankAccount bankAccount = new BankAccount(100);
-        bankAccount.deposit(-10);
+        assertThrows(NegativeDepositException.class,
+                () -> {bankAccount.deposit(-10);});
     }
 
     @Test
     void largeAmountException() {
         BankAccount bankAccount = new BankAccount(100);
+        assertThrows(WarningLargeDepositException.class,
+                () -> {bankAccount.deposit(120_000);});
         bankAccount.deposit(1000);
     }
 

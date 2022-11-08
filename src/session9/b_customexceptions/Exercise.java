@@ -30,8 +30,11 @@ public class Exercise {
 
         try {
             account.deposit(amount);
-        } catch (NegativeWithdrawException e) {
-            System.out.println("Deposited amount must be positive.");
+            System.out.println("Everything was fine");
+        } catch (NegativeDepositException e) {
+            System.out.println("Deposited amount must be positive5.");
+        } catch (WarningLargeDepositException e) {
+            System.out.println("Husk skattefar!");
         }
 
         /***** UNCOMMENT BELOW TO PROVIDE FEEDBACK ****/

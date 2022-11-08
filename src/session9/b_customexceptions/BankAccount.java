@@ -15,7 +15,7 @@ public class BankAccount {
 
     public void withdraw(int amount) {
         if (amount <= 0) {
-            NegativeWithdrawException exception = new NegativeWithdrawException(amount);
+            NegativeWithdrawException exception = new NegativeWithdrawException();
             throw exception;
         }
         if (amount >= balance) {
@@ -27,8 +27,10 @@ public class BankAccount {
 
     public void deposit(int amount) {
         if (amount <= 0) {
-            String msg = "Deposited amount must be positive.";
-            throw new NegativeWithdrawException(amount);
+            NegativeDepositException exception = new NegativeDepositException();
+            throw exception;
+        } else if (amount >= 100000) {
+            throw new WarningLargeDepositException();
         }
 
         balance=balance+amount;
