@@ -5,8 +5,12 @@ public class Demo {
 
     public static void main(String[] args) {
         NewsFeed feed = new NewsFeed();
-        feed.addEmailSubscriber("arma@cs.aau.dk");
-        feed.addAppSubscriber(123456);
+
+        Subscriber emailSubscriber1 = new EmailSubscriber("tester@gmail.com");
+        Subscriber appSubscriber = new AppSubscriber(12341234);
+
+        feed.addSubscriber(emailSubscriber1);
+        feed.addSubscriber(appSubscriber);
 
         feed.notifySubscribers("The observer pattern is great!");
 

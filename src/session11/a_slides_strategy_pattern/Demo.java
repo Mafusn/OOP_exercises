@@ -7,10 +7,10 @@ public class Demo {
 
         BankAccount bankAccount = new BankAccount(100, interestStrategy);
 
-        System.out.println("Total Balance: "+bankAccount.getBalance());
+        System.out.println("Total Balance: " + bankAccount.getBalance());
 
         bankAccount.accrueInterest();
 
-        System.out.println("Total Balance: "+bankAccount.getBalance());
+        System.out.println("Total Balance: " + bankAccount.getBalance());
     }
 }

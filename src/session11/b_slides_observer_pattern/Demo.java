@@ -10,12 +10,12 @@ public class Demo {
         BankAccount bankAccount2 = new BankAccount();
         bankAccount2.addListener(bankStatistics);
 
-        System.out.println("Total Bank Balance: "+bankStatistics.getTotalBankBalance());
+        System.out.println("Total Bank Balance: " + bankStatistics.getTotalBankBalance());
 
         bankAccount1.deposit(1000);
         bankAccount2.deposit(3000);
 
-        System.out.println("Total Bank Balance: "+bankStatistics.getTotalBankBalance());
+        System.out.println("Total Bank Balance: " + bankStatistics.getTotalBankBalance());
 
     }
 }

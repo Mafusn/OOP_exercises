@@ -1,13 +1,13 @@
 package session11.exercises.c_exercise_decorator_pattern;
 
-import session11.solutions.c_exercise_decorator_pattern_solution.SendDataService;
-import session11.solutions.c_exercise_decorator_pattern_solution.SendDataServiceBasic;
+//import session11.solutions.c_exercise_decorator_pattern_solution.SendDataService;
+//import session11.solutions.c_exercise_decorator_pattern_solution.SendDataServiceBasic;
 
 public class Demo {
     public static void main(String[] args) {
-        SendDataService sendDataService = new SendDataServiceBasic("http://128.1.1.1");
+       // SendDataService sendDataService = new SendDataServiceBasic("http://128.1.1.1");
 
-        sendDataService.sendData("Hello");
+        //sendDataService.sendData("Hello");
         System.out.println();
 
         /***** UNCOMMENT BELOW TO PROVIDE FEEDBACK ****/

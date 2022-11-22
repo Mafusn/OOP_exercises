@@ -9,6 +9,7 @@ import java.util.List;
 public class ShoppingCart{
 
     private List<Product> products;
+    private PaymentMethod paymentMethod;
 
     public ShoppingCart() {
         this.products = new ArrayList<>();
@@ -26,12 +27,7 @@ public class ShoppingCart{
         return totalPrice;
     }
 
-    public boolean pay(MasterCard card){
-         return card.chargeToTheCreditCard(this.getTotalPrice());
+    public boolean pay(PaymentMethod paymentMethod){
+         return paymentMethod.pay(this.getTotalPrice());
     }
-
-    public boolean pay(PayPal payPal){
-        return payPal.processPayment(this.getTotalPrice());
-    }
-
 }
