@@ -5,16 +5,14 @@ import session13.visitors.Visitor;
 public class Evaluator implements Visitor {
     int result;
     int lastInteger;
-    Node lastOperation;
+    Node lastOperation = new SumNode("+");
 
     @Override
     public void visit(IntegerNode node) {
-        if (lastOperation == null) {
-            this.result = node.getIntValue();
+        if (lastOperation.getString().equals("+")) {
+            this.result += node.getIntValue();
         } else if (lastOperation.getString().equals("-")) {
             this.result -= node.getIntValue();
-        } else if (lastOperation.getString().equals("+")) {
-            this.result += node.getIntValue();
         }
     }
 
