@@ -1,5 +1,6 @@
 package session13.visitors;
 
+import session13.mathexpression.Evaluator;
 import session13.mathexpression.Node;
 import session13.mathexpression.MathExpression;
 
@@ -35,7 +36,7 @@ public class Exercise2 {
 
 
         System.out.println("Evaluating the expression: ");
-        Visitor evaluator = null;
+        Visitor evaluator = new Evaluator();
 
         for (Node node : mathExpression) {
             node.accept(evaluator);
