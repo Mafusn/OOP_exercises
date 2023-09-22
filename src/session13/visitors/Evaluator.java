@@ -1,23 +1,23 @@
-package session13.mathexpression;
+package session13.visitors;
 
+import session13.mathexpression.*;
 import session13.visitors.Visitor;
 
 public class Evaluator implements Visitor {
     int result;
-    int lastInteger;
+    int currentInteger;
     Node lastOperation = new SumNode("+");
 
     @Override
     public void visit(IntegerNode node) {
-        if (lastOperation.getString().equals("+")) {
-            this.result += node.getIntValue();
-        } else if (lastOperation.getString().equals("-")) {
-            this.result -= node.getIntValue();
-        }
+        this.currentInteger = node.getIntValue();
+
+        this.lastOperation.accept(this);
     }
 
     @Override
     public void visit(SumNode node) {
+        this.result += this.currentInteger;
         this.lastOperation = node;
     }
 
@@ -28,6 +28,7 @@ public class Evaluator implements Visitor {
 
     @Override
     public void visit(SubstractionNode node) {
+        this.result -= this.currentInteger;
         this.lastOperation = node;
     }
 

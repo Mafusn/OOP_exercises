@@ -1,6 +1,5 @@
 package session13.visitors;
 
-import session13.mathexpression.Evaluator;
 import session13.mathexpression.Node;
 import session13.mathexpression.MathExpression;
 
